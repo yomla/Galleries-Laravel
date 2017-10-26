@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('login', function (){
+    return view('galleries/login/login');
+});
+
+Route::get('register', function () {
+    return view('galleries/register/register');
+}); 
+
+Route::get('all-galleries', function () {
+    return view('galleries/all-galleries');
+}); 
